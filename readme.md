@@ -9,7 +9,7 @@ The goal is to demonstrate my understanding of core concepts, tool proficiency, 
 
 ---
 
-## 🎯 **Project Goals**
+## **Project Goals**
 
 * **Master Core DE Concepts:** Gain a deep understanding of data ingestion, storage, warehousing, orchestration, batch, and streaming processing.
 * **Hands-on Tool Proficiency:** Become proficient with tools like Docker, Terraform, Google Cloud Platform (GCP), Mage AI, BigQuery, dbt, Spark, Kafka, and more.
