@@ -1,0 +1,22 @@
+{
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu-22.04",
+  // Or for Ubuntu 24.04 (Noble Numbat), if available and stable:
+  // "image": "mcr.microsoft.com/devcontainers/base:ubuntu-24.04",
+  "features": {
+    "ghcr.io/devcontainers/features/terraform:1": {
+      "version": "latest" // Or a specific version like "1.7.5"
+    },
+    // ADD THIS DOCKER FEATURE:
+    "ghcr.io/devcontainers/features/docker-in-docker:1": {
+      "version": "latest", // Or a specific version if you need it
+      "enableNonRootDocker": "true" // Crucial for using docker command as a non-root user
+    },
+    // 2. Python & Jupyter Notebook: Installs a specific Python version and optionally Jupyter.
+    "ghcr.io/devcontainers/features/python:1": {
+      "version": "3.11", // Recommended stable version. You can choose "3.10", "3.12", or "latest".
+      "installJupyter": true, // Crucial for getting Jupyter Notebook
+      "installPipx": true      // Useful for installing Python CLI tools (like black, isort) in isolated environments.
+    }
+  },
+  "postCreateCommand": "pip install notebook ipykernel && terraform --version && python --version && jupyter --version && docker --version && echo 'All core tools verified!'"
+}
