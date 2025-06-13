@@ -1,4 +1,4 @@
-# Chapter 1 of data-engineering-zoomcamp
+# Introuduction
 
 ### This repo contains all the files that are created when following along the chapter 1 of data engineering zoomcamp repo.
 ### Github link: https://github.com/DataTalksClub/data-engineering-zoomcamp
